@@ -1,0 +1,31 @@
+html
+{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body 
+{
+    font-size: 1.6rem;
+    font-family: 'lato', sans-serif;
+    background-color: cadetblue;
+}
+
+header
+{
+    padding: 3rem 0;
+}
+header h1 {
+    text-align: center;
+    color: aquamarine;
+    font-size: 6rem;
+}
+header p {
+    color: hotpink;
+    text-align: center;
+    font-size: 3.2rem;
+}
+header p a {
+    text-decoration: none;
+    color: blueviolet;
+}
