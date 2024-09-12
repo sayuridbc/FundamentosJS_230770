@@ -3,7 +3,7 @@ Proyecto de Clase para la Unidad 1 de la asignatura de Aplicaciones Web Orientad
 
 ## Descripción
   Previo a iniciar el desarrollo de software para web usando el framework de Node JS, realizaremos un 
-  par de practicas de repaso en JavaScript puro, con eol objetivo de confirmar los conocimientos 
+  par de practicas de repaso en JavaScript puro, con el objetivo de confirmar los conocimientos 
   básicos de lógica de programación
 
 ## Historial de practicas
