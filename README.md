@@ -11,12 +11,12 @@ Proyecto de Clase para la Unidad 1 de la asignatura de Aplicaciones Web Orientad
 
 ## Historial de practicas
 
-|No.|Descripción|Estatus|
+|No.|Descripción|Potenciadores|Estatus|
 |--|--|--|
-|1.|Metodología de Evaluacion|Finalizada|
-|2.|Inicialización del Proyecto de fundamentos de JS|Finalizada|
-|3.|Declaración de variables (Undefined,Number,Boolean|Finalizada|
-|4.|Declaración de variables|Finalizada|
+|1.|Metodología de Evaluacion|1|Finalizada|
+|2.|Inicialización del Proyecto de fundamentos de JS|5|Finalizada|
+|3.|Declaración de variables (Undefined,Number,Boolean|10|Finalizada|
+|4.|Declaración de variables|6|Finalizada|
 |5.|Introduccion a los objetos|Activa|
 
 
