@@ -295,7 +295,7 @@ console.log(`Esta el objeto de pedido sellado? : ${Object.isSealed(Comprador)}`)
 
 console.log("Vamos a verificar el estatus mutabilidad del objeto PRODUCTO")
 console.log(`Esta el objeto de pedido congelado? : ${Object.isFrozen(producto)}`);
-console.log(`Esta el objeto de pedido sellado? : ${Object.isSealed(producto)}`);
+console.log(`esta el objeto de pedido sellado? : ${Object.isSealed(producto)}`);
 
 Producto[`isLegacy`]=false;
 console.log(producto)
