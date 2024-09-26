@@ -70,6 +70,7 @@ console.log(typeof(Producto_SKU));
 console.log("%c2.- objeto", style_console);
 let Producto =
 { 
+    ID:3241,
     Nombre:"Tenis",
     Marca:"adidas",
     Modelo:"forum low",
@@ -89,7 +90,7 @@ console.table(Producto)
  console.log(`Nombre completo del producto: ${Producto.Nombre} ${Producto.Marca} ${Producto.Modelo}`)
  console.log(`Precio: ${Producto.Precio}`)
  if(Producto.Disponibilidad == 0)
-    console.log(`Estatus: Agotado`)
+5816,    console.log(`Estatus: Agotado`)
 else 
 console.log(`Estatus: ${Producto_Stock} unidades disponibles.`);
 
@@ -97,6 +98,7 @@ console.log("%c3.- Destructuración de Objetos", style_console);
 
 let Producto2 ={
 
+    ID:"1234",
 Clave:321,
 Nombre: "Gorra",
 Marca:"adidas",
@@ -111,6 +113,7 @@ Categorias: ["ropa"],
 }
  let Comprador =
  {
+    ID:"4321",
     clave:445,
     Nombre:"Say",
     Apellidos:"Bautista",
@@ -122,6 +125,7 @@ Categorias: ["ropa"],
 
 let pedido=
 {
+    ID:5816,
     producto_clave:345,
     comprador_clave:132,
     Cantidad:1,
@@ -240,3 +244,59 @@ clientePais="Extranjero"
 let datoClientePromociones={clienteCorreo,clientePais,clienteNivel,clienteSaldo,productoMarca,precioProducto}
 console.log("los datos del cliente y sus habitps de compra son:")
 console.table(datoClientePromociones)
+
+//union de objetos 
+console.log("%c10,- Unión de objetos usando el método de asignación (ASSING)", style_console);
+
+console.log("Imprimir la estructura y valores del objeto de PRODUCTO")
+console.table(Producto);
+
+console.log("Imprimir la estructura y valores del objeto de PEDIDO")
+console.table(pedido);
+
+
+
+//suponiendo que el ususario ya realizó el pago el pedido se convertira en una VENTA que requiere información de ambos objetos 
+let Producto3={...Producto}
+const Venta = Object.assign(Producto3, pedido);
+console.log("Consultamos este nuevo objeto VENTA")
+console.table(Venta);
+
+//Union de Objetos usando SPREAD OPERATOR para evitar la perdida de información con Objetos que comparten el mismo nombre en sus propiedades 
+
+console.log("c11.- Unión de objetos usando el SPREAD OPERATOR (...) ",style_console);
+
+console.table(Producto2);
+console.table(Comprador);
+console.table(pedido);
+
+let Venta2 = 
+{ 
+    producto: {...producto},
+    Comprador: {...Comprador},
+    pedido: {...pedido}
+}
+console.log("Fusionamos los 3 Objetos en uno nuevo sin perdida de información")
+console.table(Venta2);
+
+const autenticado=true
+const usuario="say"
+
+console.log("Vamos a verificar el estatus mutabilidad del objeto PRODUCTO")
+console.log(`Esta el objeto de pedido congelado? : ${Object.isFrozen(pedido)}`);
+console.log(`Esta el objeto de pedido sellado? : ${Object.isSealed(pedido)}`);
+
+
+console.log("Vamos a verificar el estatus mutabilidad del objeto PRODUCTO")
+console.log(`Esta el objeto de pedido congelado? : ${Object.isFrozen(Comprador
+)}`);
+console.log(`Esta el objeto de pedido sellado? : ${Object.isSealed(Comprador)}`);
+
+
+console.log("Vamos a verificar el estatus mutabilidad del objeto PRODUCTO")
+console.log(`Esta el objeto de pedido congelado? : ${Object.isFrozen(producto)}`);
+console.log(`Esta el objeto de pedido sellado? : ${Object.isSealed(producto)}`);
+
+Producto[`isLegacy`]=false;
+console.log(producto)
+console.log(Venta2);
