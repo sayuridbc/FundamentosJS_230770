@@ -9,12 +9,16 @@ Proyecto de Clase para la Unidad 1 de la asignatura de Aplicaciones Web Orientad
 >>>>>>> Say-Practica3
   básicos de lógica de programación
 
-## Historial de Practicas
 
-|No.|Descripción|Estatus|
-|--|--|--|
-|1.|Metodología de Evaluacion|Activa|
-|2.|Inicialización del Proyecto de fundamentos de JS|Activa|
+## Historial de practicas
+
+|No.|Descripción|Potenciador|Estatus|
+|--|--|--|--|
+|1.|Metodología de Evaluacion|1|Finalizada|
+|2.|Inicialización del Proyecto de fundamentos de JS|5|Finalizada|
+|3.|Declaración de variables (undeFinided,Number,Boolean)|10|Finalizada|
+|4.|Declaracion de variables (String/BigInit/Null/Symbol/Function)|6|Finalizada|
+|5.|Introduccion a objetos |19|Finalizada|
 
 
 
